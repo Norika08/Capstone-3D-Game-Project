@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=18 format=3 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
 [ext_resource type="PackedScene" uid="uid://cybg4h5ktqrg2" path="res://Materials/Hole Cake.fbx" id="2_vfivi"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://b8so75qn21kxy" path="res://Materials/magican_cylinder.fbx" id="10_37yke"]
 [ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
 [ext_resource type="PackedScene" uid="uid://b2q4bwtndj7l1" path="res://Materials/Butterfly.fbx" id="12_u0r8x"]
+[ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
+[ext_resource type="PackedScene" uid="uid://dq3b2rxdgxis1" path="res://Materials/cake holder.fbx" id="14_appqj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
 sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
@@ -43,7 +45,7 @@ transform = Transform3D(7, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
 transform = Transform3D(1.24, 0, 0, 0, 1.24, 0, 0, 0, 1.24, -0.0774288, 2.60148, -0.0339586)
 
 [node name="Cup" parent="." instance=ExtResource("3_uu2ix")]
-transform = Transform3D(-0.417565, 0, -1.95592, 0, 2, 0, 1.95592, 0, -0.417565, -4.40432, 2.61185, -0.284349)
+transform = Transform3D(-0.417565, 0, -1.95592, 0, 2, 0, 1.95592, 0, -0.417565, -4.30175, 2.61185, -0.284349)
 
 [node name="Cup2" parent="." instance=ExtResource("3_uu2ix")]
 transform = Transform3D(-1.99177, 0, 0.181265, 0, 2, 0, -0.181265, 0, -1.99177, -2.45073, 2.61373, -1.29061)
@@ -61,13 +63,13 @@ transform = Transform3D(0.692194, 0, -0.721712, 0, 1, 0, 0.721712, 0, 0.692194, 
 transform = Transform3D(-3.08034, 0, 1.66178, 0, 3.5, 0, -1.66178, 0, -3.08034, -2.79003, 2.60948, -0.375574)
 
 [node name="Chocolate Cake with Plate and Fork FBX (Unity)2" parent="." instance=ExtResource("6_debim")]
-transform = Transform3D(2.35387, 0, -2.59023, 0, 3.5, 0, 2.59023, 0, 2.35387, -3.49882, 2.62024, 0.540848)
+transform = Transform3D(2.35387, 0, -2.59023, 0, 3.5, 0, 2.59023, 0, 2.35387, -3.99936, 2.62024, 0.839121)
 
 [node name="Donut3" parent="." instance=ExtResource("7_whuke")]
-transform = Transform3D(-0.206665, 0, -0.203444, 0, 0.29, 0, 0.203444, 0, -0.206665, -2.00501, 2.57743, -0.15225)
+transform = Transform3D(-0.156929, 0, -0.243871, 0, 0.29, 0, 0.243871, 0, -0.156929, -1.96613, 2.57743, -0.507057)
 
 [node name="Easter_bunny" parent="." instance=ExtResource("8_soqnl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.70134, 3.1679, -0.443279)
+transform = Transform3D(2.08, 0, 0, 0, 2.08, 0, 0, 0, 2.08, -1.70134, 2.60711, 0.0205373)
 
 [node name="cubcake" parent="." instance=ExtResource("9_aacrr")]
 transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -3.60336, 2.69284, -0.995686)
@@ -80,3 +82,9 @@ transform = Transform3D(0.0223175, 0.00478999, -0.0194676, 0, 0.0291312, 0.00716
 
 [node name="Butterfly" parent="." instance=ExtResource("12_u0r8x")]
 transform = Transform3D(-0.161655, 0.11323, -0.0971939, -0.0416672, 0.103343, 0.189695, 0.143288, 0.157795, -0.0544905, -1.09251, 2.73455, -0.256715)
+
+[node name="Rose" parent="." instance=ExtResource("13_tlgek")]
+transform = Transform3D(0.24732, 0, 0.968934, 0, 1, 0, -0.968934, 0, 0.24732, -3.44472, 2.61968, 0.514024)
+
+[node name="cake holder" parent="." instance=ExtResource("14_appqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67394, 2.56889, 0.173976)
