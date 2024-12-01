@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bgcvyka4c6iek"
+path.s3tc="res://.godot/imported/Chocolate Cake with Plate and Fork FBX (Unity)_4.png-48fcca87d905b4282d04994d8587e0bd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "59153d83a1f43e8bee21cd6e8d450c51"
+}
+
+[deps]
+
+source_file="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity)_4.png"
+dest_files=["res://.godot/imported/Chocolate Cake with Plate and Fork FBX (Unity)_4.png-48fcca87d905b4282d04994d8587e0bd.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity)_4.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

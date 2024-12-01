@@ -1,0 +1,112 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cgh6yl304du6d"
+path="res://.godot/imported/Donut.fbx-fd204927164c07f9ed1d3d9849ad9b22.scn"
+
+[deps]
+
+source_file="res://Materials/Donut and tea/Donut.fbx"
+dest_files=["res://.godot/imported/Donut.fbx-fd204927164c07f9ed1d3d9849ad9b22.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:AnimationPlayer": {
+"import/skip_import": true
+},
+"PATH:Camera": {
+"import/skip_import": true
+},
+"PATH:Light": {
+"import/skip_import": true
+},
+"PATH:Light_001": {
+"import/skip_import": true
+},
+"PATH:Light_002": {
+"import/skip_import": true
+},
+"PATH:Plane": {
+"import/skip_import": true
+},
+"PATH:Plane_001": {
+"generate/physics": true
+},
+"PATH:Plane_001/Sphere_004": {
+"generate/physics": true
+},
+"PATH:Plane_001/Sphere_006": {
+"generate/physics": true
+},
+"PATH:Plane_001/Sphere_007": {
+"generate/physics": true
+},
+"PATH:Plane_001/Sphere_008": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing/icing|Sphere_001|Dupli|1": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing/icing|Sphere_002|Dupli|2": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing/icing|Sphere_003|Dupli|3": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing/icing|Sphere|Dupli|": {
+"generate/physics": true
+},
+"PATH:Plane_001/donut/icing/icing|Sphere|Dupli|4": {
+"generate/physics": true
+},
+"PATH:Plane_002": {
+"import/skip_import": true
+},
+"PATH:Sphere": {
+"import/skip_import": true
+},
+"PATH:Sphere_001": {
+"import/skip_import": true
+},
+"PATH:Sphere_002": {
+"import/skip_import": true
+},
+"PATH:Sphere_003": {
+"import/skip_import": true
+},
+"PATH:tabak": {
+"import/skip_import": true
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

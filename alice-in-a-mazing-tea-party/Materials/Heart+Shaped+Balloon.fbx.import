@@ -1,0 +1,73 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ixjksu07e1cx"
+path="res://.godot/imported/Heart+Shaped+Balloon.fbx-8a72f07d9523eecd2d004e7911dfd8c4.scn"
+
+[deps]
+
+source_file="res://Materials/Heart+Shaped+Balloon.fbx"
+dest_files=["res://.godot/imported/Heart+Shaped+Balloon.fbx-8a72f07d9523eecd2d004e7911dfd8c4.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:HRT02/Heart003": {
+"import/skip_import": true
+},
+"PATH:HRT02/Heart004": {
+"generate/physics": true
+},
+"PATH:Hrt/Heart": {
+"generate/physics": true
+},
+"PATH:Hrt/Heart001": {
+"generate/physics": true
+},
+"PATH:Plane001": {
+"import/skip_import": true
+},
+"PATH:Plane002": {
+"import/skip_import": true
+},
+"PATH:VRayCam010": {
+"import/skip_import": true
+},
+"PATH:VRayCam010_Target": {
+"import/skip_import": true
+},
+"PATH:VRayCam012": {
+"import/skip_import": true
+},
+"PATH:VRayCam012_Target": {
+"import/skip_import": true
+},
+"PATH:VRayLight004": {
+"import/skip_import": true
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

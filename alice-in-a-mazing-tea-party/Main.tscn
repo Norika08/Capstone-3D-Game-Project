@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://unqb7rmyh7ks"]
+
+[ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
+sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
+sky_horizon_color = Color(0.633434, 0.627355, 0.821709, 1)
+ground_bottom_color = Color(0.055305, 0.289813, 0.318207, 1)
+ground_horizon_color = Color(0.633434, 0.627355, 0.821709, 1)
+
+[sub_resource type="Sky" id="Sky_jvsna"]
+sky_material = SubResource("ProceduralSkyMaterial_cbgfg")
+
+[sub_resource type="Environment" id="Environment_j5nx1"]
+background_mode = 2
+sky = SubResource("Sky_jvsna")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28088, 1.39716)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j5nx1")
+
+[node name="Old_table" parent="." instance=ExtResource("1_x1465")]
+transform = Transform3D(3, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)

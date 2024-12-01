@@ -1,0 +1,76 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bowgp1tgojhy"
+path="res://.godot/imported/plates_2.fbx-64bb7918200832fc3bca72b78c6f1794.scn"
+
+[deps]
+
+source_file="res://Materials/plate/plates_2.fbx"
+dest_files=["res://.godot/imported/plates_2.fbx-64bb7918200832fc3bca72b78c6f1794.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:AnimationPlayer": {
+"import/skip_import": true
+},
+"PATH:BezierCircle": {
+"import/skip_import": true
+},
+"PATH:Camera": {
+"import/skip_import": true
+},
+"PATH:Scene": {
+"import/skip_import": true
+},
+"PATH:Table": {
+"generate/physics": true
+},
+"PATH:Table/Dish": {
+"generate/physics": true
+},
+"PATH:Table/Fork": {
+"generate/physics": true
+},
+"PATH:Table/IceCreamPlate": {
+"import/skip_import": true
+},
+"PATH:Table/Plate": {
+"import/skip_import": true
+},
+"PATH:Table/Spoon": {
+"generate/physics": true
+},
+"PATH:Table/TeaSpoon": {
+"generate/physics": true
+},
+"PATH:Table/knife": {
+"generate/physics": true
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
