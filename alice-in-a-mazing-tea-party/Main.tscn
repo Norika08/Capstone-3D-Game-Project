@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=27 format=3 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
 [ext_resource type="PackedScene" uid="uid://cybg4h5ktqrg2" path="res://Materials/Hole Cake.fbx" id="2_vfivi"]
@@ -15,6 +15,14 @@
 [ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
 [ext_resource type="PackedScene" uid="uid://dq3b2rxdgxis1" path="res://Materials/cake holder.fbx" id="14_appqj"]
 [ext_resource type="PackedScene" uid="uid://v8wleorcewrq" path="res://Materials/potion/Green_Potion_8.fbx" id="15_364f8"]
+[ext_resource type="PackedScene" uid="uid://ndr6nhny1use" path="res://Materials/desserts/uploads-files-2896303-Sugar.fbx" id="16_7qc35"]
+[ext_resource type="PackedScene" uid="uid://g7s4to5wa34m" path="res://Materials/candle.fbx" id="17_lxd7h"]
+[ext_resource type="PackedScene" uid="uid://x55xkomb2rop" path="res://Materials/uploads-files-4261001-figurine01.fbx" id="18_pu6oy"]
+[ext_resource type="PackedScene" uid="uid://dx5euxwfjeial" path="res://Materials/desserts/GravyBoat.fbx" id="19_m16jh"]
+[ext_resource type="PackedScene" uid="uid://duo5cx7us17u6" path="res://Materials/desserts/Pank.fbx" id="20_23uea"]
+[ext_resource type="PackedScene" uid="uid://byak53ooo5ghk" path="res://Materials/desserts/Wine.fbx" id="21_1gmux"]
+[ext_resource type="PackedScene" uid="uid://c25ycviedvx35" path="res://Materials/desserts/uploads-files-4106637-Table+Setting+Decoration.fbx" id="22_3i7e6"]
+[ext_resource type="PackedScene" uid="uid://0pjye2qvd4fg" path="res://Materials/desserts/Fruit.fbx" id="23_hus81"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
 sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
@@ -92,3 +100,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67394, 2.56889, 0.173976)
 
 [node name="Green_Potion_8" parent="." instance=ExtResource("15_364f8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1196, 2.77614, -0.0261539)
+
+[node name="GlassBowl" parent="." instance=ExtResource("16_7qc35")]
+transform = Transform3D(-6.12397e-07, 0, 14.01, 0, 14.01, 0, -14.01, 0, -6.12397e-07, 0.855265, 2.60081, -0.895972)
+
+[node name="candle" parent="." instance=ExtResource("17_lxd7h")]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, 1.86785, 2.60301, -0.0122271)
+
+[node name="bird" parent="." instance=ExtResource("18_pu6oy")]
+transform = Transform3D(-2.08, 0, -1.81839e-07, 0, 2.08, 0, 1.81839e-07, 0, -2.08, 1.83534, 2.609, 0.685992)
+
+[node name="GravyBoat" parent="." instance=ExtResource("19_m16jh")]
+transform = Transform3D(-1.12338e-07, 0, 2.57, 0, 2.57, 0, -2.57, 0, -1.12338e-07, 2.69534, 2.61134, 0.353958)
+
+[node name="Pank" parent="." instance=ExtResource("20_23uea")]
+transform = Transform3D(250, 0, 0, 0, 250, 0, 0, 0, 250, 2.83644, 2.61587, -0.710008)
+
+[node name="Wine" parent="." instance=ExtResource("21_1gmux")]
+transform = Transform3D(0.28, 0, 0, 0, 0.28, 0, 0, 0, 0.28, 2.80776, 2.61502, 1.15706)
+
+[node name="Plates&Flowers" parent="." instance=ExtResource("22_3i7e6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.35771, 2.60505, 0.13573)
+
+[node name="Fruit" parent="." instance=ExtResource("23_hus81")]
+transform = Transform3D(1.79, 0, 0, 0, 1.79, 0, 0, 0, 1.79, 0.685099, 2.6068, 0.934407)
