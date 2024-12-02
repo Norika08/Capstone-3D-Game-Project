@@ -45,6 +45,51 @@ _subresources={
 "PATH:Cube": {
 "import/skip_import": true
 },
+"PATH:Cylinder": {
+"generate/physics": true
+},
+"PATH:Cylinder_001": {
+"generate/physics": true
+},
+"PATH:Cylinder_002": {
+"generate/physics": true
+},
+"PATH:Cylinder_003": {
+"generate/physics": true
+},
+"PATH:Donut": {
+"generate/physics": true
+},
+"PATH:Donut/icing": {
+"generate/physics": true
+},
+"PATH:Donut_001": {
+"generate/physics": true
+},
+"PATH:Donut_001/icing_001": {
+"generate/physics": true
+},
+"PATH:Donut_002": {
+"generate/physics": true
+},
+"PATH:Donut_002/icing_002": {
+"generate/physics": true
+},
+"PATH:Donut_003": {
+"generate/physics": true
+},
+"PATH:Donut_003/icing_003": {
+"generate/physics": true
+},
+"PATH:Donut_004": {
+"generate/physics": true
+},
+"PATH:Donut_006": {
+"generate/physics": true
+},
+"PATH:Donut_006/icing_006": {
+"generate/physics": true
+},
 "PATH:Empty": {
 "import/skip_import": true
 },
