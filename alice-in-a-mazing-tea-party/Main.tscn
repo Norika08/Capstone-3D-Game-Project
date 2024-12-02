@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=19 format=3 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
 [ext_resource type="PackedScene" uid="uid://cybg4h5ktqrg2" path="res://Materials/Hole Cake.fbx" id="2_vfivi"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://b2q4bwtndj7l1" path="res://Materials/Butterfly.fbx" id="12_u0r8x"]
 [ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
 [ext_resource type="PackedScene" uid="uid://dq3b2rxdgxis1" path="res://Materials/cake holder.fbx" id="14_appqj"]
+[ext_resource type="PackedScene" uid="uid://v8wleorcewrq" path="res://Materials/potion/Green_Potion_8.fbx" id="15_364f8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
 sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
@@ -88,3 +89,6 @@ transform = Transform3D(0.24732, 0, 0.968934, 0, 1, 0, -0.968934, 0, 0.24732, -3
 
 [node name="cake holder" parent="." instance=ExtResource("14_appqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67394, 2.56889, 0.173976)
+
+[node name="Green_Potion_8" parent="." instance=ExtResource("15_364f8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1196, 2.77614, -0.0261539)
