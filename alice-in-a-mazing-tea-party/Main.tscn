@@ -21,9 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://dx5euxwfjeial" path="res://Materials/desserts/GravyBoat.fbx" id="19_m16jh"]
 [ext_resource type="PackedScene" uid="uid://dgki3qpk2hcas" path="res://bird_collision.tscn" id="19_tvayx"]
 [ext_resource type="PackedScene" uid="uid://gcmsiyftsg8e" path="res://pank_collision.tscn" id="20_pr3cw"]
-[ext_resource type="PackedScene" uid="uid://byak53ooo5ghk" path="res://Materials/desserts/Wine.fbx" id="21_1gmux"]
 [ext_resource type="PackedScene" uid="uid://d3yrrblsgsn3k" path="res://flowers.tscn" id="21_xwfq4"]
 [ext_resource type="PackedScene" uid="uid://d2u1r0rg5hqiu" path="res://fruit.tscn" id="22_nnpf2"]
+[ext_resource type="PackedScene" uid="uid://bk8gbsojho5xs" path="res://wine_collision.tscn" id="22_u3ss0"]
 [ext_resource type="PackedScene" uid="uid://8qkkrkbg0vvj" path="res://Materials/desserts/Table Setting Decoration.fbx" id="23_4tkao"]
 [ext_resource type="PackedScene" uid="uid://das233fe4hifk" path="res://Materials/desserts/flowers.fbx" id="24_ud7vk"]
 [ext_resource type="Script" path="res://character_body_3d.gd" id="25_d34u1"]
@@ -125,7 +125,7 @@ transform = Transform3D(-1.12338e-07, 0, 2.57, 0, 2.57, 0, -2.57, 0, -1.12338e-0
 [node name="Pank2" parent="." instance=ExtResource("20_pr3cw")]
 transform = Transform3D(250, 0, 0, 0, 250, 0, 0, 0, 250, 2.78146, 2.61587, -0.553621)
 
-[node name="Wine" parent="." instance=ExtResource("21_1gmux")]
+[node name="Wine2" parent="." instance=ExtResource("22_u3ss0")]
 transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-08, 2.90706, 2.61502, 0.0447031)
 
 [node name="Fruit" parent="." instance=ExtResource("22_nnpf2")]
