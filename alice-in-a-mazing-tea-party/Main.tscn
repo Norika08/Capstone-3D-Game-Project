@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bdgjg32pbt8s7" path="res://Materials/teaset(sugerpot).fbx" id="5_lv0aw"]
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
 [ext_resource type="PackedScene" uid="uid://siarrdndiiud" path="res://Materials/Donut.fbx" id="7_whuke"]
-[ext_resource type="PackedScene" uid="uid://dov2enyg6jkg4" path="res://Materials/Easter_bunny_fbx/Easter_bunny.FBX" id="8_soqnl"]
 [ext_resource type="PackedScene" uid="uid://ciur3131ttrcj" path="res://Materials/cubcake.fbx" id="9_aacrr"]
+[ext_resource type="PackedScene" uid="uid://b041416t5mopp" path="res://easter_bunny_collision.tscn" id="9_ql6n7"]
 [ext_resource type="PackedScene" uid="uid://b8so75qn21kxy" path="res://Materials/magican_cylinder.fbx" id="10_37yke"]
 [ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
 [ext_resource type="PackedScene" uid="uid://b2q4bwtndj7l1" path="res://Materials/Butterfly.fbx" id="12_u0r8x"]
@@ -86,7 +86,7 @@ transform = Transform3D(2.35387, 0, -2.59023, 0, 3.5, 0, 2.59023, 0, 2.35387, -3
 [node name="Donut3" parent="." instance=ExtResource("7_whuke")]
 transform = Transform3D(-0.156929, 0, -0.243871, 0, 0.29, 0, 0.243871, 0, -0.156929, -1.96613, 2.57743, -0.507057)
 
-[node name="Easter_bunny" parent="." instance=ExtResource("8_soqnl")]
+[node name="Easter_bunny2" parent="." instance=ExtResource("9_ql6n7")]
 transform = Transform3D(2.08, 0, 0, 0, 2.08, 0, 0, 0, 2.08, -1.70134, 2.60711, 0.0205373)
 
 [node name="cubcake" parent="." instance=ExtResource("9_aacrr")]
