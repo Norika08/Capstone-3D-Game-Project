@@ -19,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://g7s4to5wa34m" path="res://Materials/candle.fbx" id="17_lxd7h"]
 [ext_resource type="PackedScene" uid="uid://x55xkomb2rop" path="res://Materials/uploads-files-4261001-figurine01.fbx" id="18_pu6oy"]
 [ext_resource type="PackedScene" uid="uid://dx5euxwfjeial" path="res://Materials/desserts/GravyBoat.fbx" id="19_m16jh"]
-[ext_resource type="PackedScene" uid="uid://duo5cx7us17u6" path="res://Materials/desserts/Pank.fbx" id="20_23uea"]
+[ext_resource type="PackedScene" uid="uid://gcmsiyftsg8e" path="res://pank_collision.tscn" id="20_pr3cw"]
 [ext_resource type="PackedScene" uid="uid://byak53ooo5ghk" path="res://Materials/desserts/Wine.fbx" id="21_1gmux"]
 [ext_resource type="PackedScene" uid="uid://d3yrrblsgsn3k" path="res://flowers.tscn" id="21_xwfq4"]
 [ext_resource type="PackedScene" uid="uid://d2u1r0rg5hqiu" path="res://fruit.tscn" id="22_nnpf2"]
@@ -229,7 +229,7 @@ transform = Transform3D(-2.08, 0, -1.81839e-07, 0, 2.08, 0, 1.81839e-07, 0, -2.0
 [node name="GravyBoat2" parent="." instance=ExtResource("19_m16jh")]
 transform = Transform3D(-1.12338e-07, 0, 2.57, 0, 2.57, 0, -2.57, 0, -1.12338e-07, 2.49569, 2.61134, 0.486326)
 
-[node name="Pank" parent="." instance=ExtResource("20_23uea")]
+[node name="Pank2" parent="." instance=ExtResource("20_pr3cw")]
 transform = Transform3D(250, 0, 0, 0, 250, 0, 0, 0, 250, 2.78146, 2.61587, -0.553621)
 
 [node name="Wine" parent="." instance=ExtResource("21_1gmux")]
