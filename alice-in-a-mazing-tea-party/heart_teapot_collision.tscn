@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://wjlwvfjw4885"]
+
+[ext_resource type="PackedScene" uid="uid://bptle4nv1v705" path="res://Materials/HeartTeapot.fbx" id="1_fi2el"]
+
+[node name="HeartTeapot" instance=ExtResource("1_fi2el")]
