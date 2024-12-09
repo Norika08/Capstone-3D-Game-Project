@@ -5,13 +5,15 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j058k"]
 resource_name = "RHIGH.022"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
+albedo_color = Color(0.286502, 0.160287, 0.0205683, 1)
 emission_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vi3ow"]
 resource_name = "RLOW.022"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
+albedo_color = Color(0.784314, 0.768627, 1, 1)
+metallic = 0.86
+roughness = 0.42
 emission_enabled = true
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_njxd5"]
