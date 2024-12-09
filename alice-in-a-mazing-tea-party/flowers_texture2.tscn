@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://byu4ysi632mpg"]
+
+[ext_resource type="PackedScene" uid="uid://das233fe4hifk" path="res://Materials/desserts/flowers.fbx" id="1_8ngnq"]
+
+[node name="flowers" instance=ExtResource("1_8ngnq")]
