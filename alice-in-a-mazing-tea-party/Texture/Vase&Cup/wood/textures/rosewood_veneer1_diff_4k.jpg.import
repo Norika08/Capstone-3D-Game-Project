@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xhu2pcd1dwrl"
-path.s3tc="res://.godot/imported/rosewood_veneer1_diff_4k.jpg-7782b266f71f711f8140a98cc155c4eb.s3tc.ctex"
+path.s3tc="res://.godot/imported/rosewood_veneer1_diff_4k.jpg-cadac618cc7130f502c6da9a7ffbe751.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Texture/Vase&Cup/Unknown/textures/rosewood_veneer1_diff_4k.jpg"
-dest_files=["res://.godot/imported/rosewood_veneer1_diff_4k.jpg-7782b266f71f711f8140a98cc155c4eb.s3tc.ctex"]
+source_file="res://Texture/Vase&Cup/wood/textures/rosewood_veneer1_diff_4k.jpg"
+dest_files=["res://.godot/imported/rosewood_veneer1_diff_4k.jpg-cadac618cc7130f502c6da9a7ffbe751.s3tc.ctex"]
 
 [params]
 

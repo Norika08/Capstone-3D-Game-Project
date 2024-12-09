@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2arled2b17gi"
-path="res://.godot/imported/rosewood_veneer1_disp_4k.png-944e275ddce8b647935ce66dad34fc2f.ctex"
+uid="uid://dry0q8wgu8ukh"
+path="res://.godot/imported/rosewood_veneer1_ao_4k.jpg-217400362f913bd893902c53ef0d429c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/Vase&Cup/Unknown/textures/rosewood_veneer1_disp_4k.png"
-dest_files=["res://.godot/imported/rosewood_veneer1_disp_4k.png-944e275ddce8b647935ce66dad34fc2f.ctex"]
+source_file="res://Texture/Vase&Cup/wood/textures/rosewood_veneer1_ao_4k.jpg"
+dest_files=["res://.godot/imported/rosewood_veneer1_ao_4k.jpg-217400362f913bd893902c53ef0d429c.ctex"]
 
 [params]
 
