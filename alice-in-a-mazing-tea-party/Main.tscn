@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
-[ext_resource type="PackedScene" uid="uid://dyne0rhdsfjas" path="res://cup_and_saucer_set_fbx_(unity)_collision.tscn" id="3_xx5x1"]
+[ext_resource type="PackedScene" path="res://cup_and_saucer_set_fbx_(unity)_collision.tscn" id="3_xx5x1"]
 [ext_resource type="PackedScene" uid="uid://bdgjg32pbt8s7" path="res://Materials/teaset(sugerpot).fbx" id="5_lv0aw"]
-[ext_resource type="PackedScene" uid="uid://wjlwvfjw4885" path="res://heart_teapot_collision.tscn" id="5_m5o5m"]
+[ext_resource type="PackedScene" path="res://heart_teapot_collision.tscn" id="5_m5o5m"]
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
 [ext_resource type="PackedScene" uid="uid://siarrdndiiud" path="res://Materials/Donut.fbx" id="7_whuke"]
 [ext_resource type="PackedScene" uid="uid://ciur3131ttrcj" path="res://Materials/cubcake.fbx" id="9_aacrr"]
@@ -153,8 +153,11 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.7854
 transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -3.73481, 3.24202, 0)
 script = ExtResource("25_d34u1")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+[node name="Neck" type="Node3D" parent="CharacterBody3D"]
 transform = Transform3D(33.3333, 0, -6.82121e-13, 0, 33.3333, 0, 6.82121e-13, 0, 33.3333, -0.0415512, 1.08614, -1.57788)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Neck"]
+transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 1.16415e-10, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_y4n8l")
