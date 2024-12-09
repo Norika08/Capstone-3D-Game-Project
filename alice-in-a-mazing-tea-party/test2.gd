@@ -142,7 +142,7 @@ func _physics_process(delta):
 	if move_input != Vector2.ZERO:
 		# Get camera's basis to calculate the movement direction
 		var camera_basis = camera_3d.global_transform.basis
-		var forward = -camera_basis.z.normalized()  # Forward direction is -Z
+		var forward = camera_basis.z.normalized()  # Forward direction is -Z
 		var right = camera_basis.x.normalized()     # Right direction is +X
 
 		# Calculate movement direction based on input and camera orientation
