@@ -150,7 +150,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76497, 2.61221, 0.439063)
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.78548, 2.61221, -0.510832)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -3.73481, 3.24202, 0)
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -4.09468, 3.24202, 0)
 script = ExtResource("25_d34u1")
 
 [node name="Neck" type="Node3D" parent="CharacterBody3D"]
@@ -165,3 +165,11 @@ shape = SubResource("CapsuleShape3D_y4n8l")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_02un2")
 skeleton = NodePath("../..")
+
+[node name="Node3D" type="Node3D" parent="CharacterBody3D"]
+visible = false
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02618, -0.4995, -0.438995)
+use_collision = true
+size = Vector3(14.5153, 0.001, 9.54962)
