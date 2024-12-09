@@ -39,6 +39,9 @@ _subresources={
 "PATH:BackSplash": {
 "import/skip_import": true
 },
+"PATH:Circle": {
+"generate/physics": true
+},
 "PATH:Counter": {
 "import/skip_import": true
 },
@@ -88,10 +91,25 @@ _subresources={
 "PATH:Donut_004": {
 "generate/physics": true
 },
+"PATH:Donut_004/icing_004": {
+"generate/physics": true
+},
+"PATH:Donut_005": {
+"generate/physics": true
+},
+"PATH:Donut_005/icing_005": {
+"generate/physics": true
+},
 "PATH:Donut_006": {
 "generate/physics": true
 },
 "PATH:Donut_006/icing_006": {
+"generate/physics": true
+},
+"PATH:Donut_007": {
+"generate/physics": true
+},
+"PATH:Donut_007/icing_007": {
 "generate/physics": true
 },
 "PATH:Empty": {
@@ -103,8 +121,23 @@ _subresources={
 "PATH:Microwave002_Geo_LOD0_003": {
 "import/skip_import": true
 },
+"PATH:PlantOrchid001_001": {
+"import/skip_import": true
+},
+"PATH:PlantOrchidVase001_001": {
+"import/skip_import": true
+},
 "PATH:Sphere": {
 "import/skip_import": true
+},
+"PATH:Sphere_001": {
+"generate/physics": true
+},
+"PATH:Sphere_002": {
+"generate/physics": true
+},
+"PATH:Sphere_003": {
+"generate/physics": true
 },
 "PATH:TablewareCeramicCraftCup001_VAR1_001": {
 "import/skip_import": true
