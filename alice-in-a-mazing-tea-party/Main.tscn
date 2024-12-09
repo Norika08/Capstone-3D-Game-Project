@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://wjlwvfjw4885" path="res://heart_teapot_collision.tscn" id="5_m5o5m"]
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
 [ext_resource type="PackedScene" uid="uid://siarrdndiiud" path="res://Materials/Donut.fbx" id="7_whuke"]
-[ext_resource type="PackedScene" uid="uid://ciur3131ttrcj" path="res://Materials/cubcake.fbx" id="9_aacrr"]
+[ext_resource type="PackedScene" uid="uid://dvn7hhn1fjeof" path="res://cubcake_texture.tscn" id="8_708l5"]
 [ext_resource type="PackedScene" uid="uid://b5xrk0jmejjrw" path="res://magican_cylinder_texture.tscn" id="9_w2svb"]
 [ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
 [ext_resource type="PackedScene" uid="uid://cetyo061gdt36" path="res://butterfly_texture.tscn" id="11_xfrmf"]
@@ -208,7 +208,7 @@ transform = Transform3D(2.35387, 0, -2.59023, 0, 3.5, 0, 2.59023, 0, 2.35387, -3
 [node name="Donut3" parent="." instance=ExtResource("7_whuke")]
 transform = Transform3D(-0.176898, 0, 0.229797, 0, 0.29, 0, -0.229797, 0, -0.176898, -1.65137, 2.59267, -0.982164)
 
-[node name="cubcake" parent="." instance=ExtResource("9_aacrr")]
+[node name="cubcake2" parent="." instance=ExtResource("8_708l5")]
 transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -3.78976, 2.69284, 0.118811)
 
 [node name="magican_cylinder2" parent="." instance=ExtResource("9_w2svb")]
