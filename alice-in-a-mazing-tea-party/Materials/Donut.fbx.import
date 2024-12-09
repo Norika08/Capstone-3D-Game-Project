@@ -46,16 +46,20 @@ _subresources={
 "import/skip_import": true
 },
 "PATH:Cylinder": {
-"generate/physics": true
+"generate/physics": true,
+"import/skip_import": true
 },
 "PATH:Cylinder_001": {
-"generate/physics": true
+"generate/physics": true,
+"import/skip_import": true
 },
 "PATH:Cylinder_002": {
-"generate/physics": true
+"generate/physics": true,
+"import/skip_import": true
 },
 "PATH:Cylinder_003": {
-"generate/physics": true
+"generate/physics": true,
+"import/skip_import": true
 },
 "PATH:Donut": {
 "generate/physics": true
