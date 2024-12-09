@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
 [ext_resource type="PackedScene" uid="uid://siarrdndiiud" path="res://Materials/Donut.fbx" id="7_whuke"]
 [ext_resource type="PackedScene" uid="uid://ciur3131ttrcj" path="res://Materials/cubcake.fbx" id="9_aacrr"]
-[ext_resource type="PackedScene" uid="uid://b8so75qn21kxy" path="res://Materials/magican_cylinder.fbx" id="10_37yke"]
+[ext_resource type="PackedScene" uid="uid://b5xrk0jmejjrw" path="res://magican_cylinder_texture.tscn" id="9_w2svb"]
 [ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
-[ext_resource type="PackedScene" uid="uid://b2q4bwtndj7l1" path="res://Materials/Butterfly.fbx" id="12_u0r8x"]
+[ext_resource type="PackedScene" uid="uid://cetyo061gdt36" path="res://butterfly_texture.tscn" id="11_xfrmf"]
 [ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
 [ext_resource type="PackedScene" uid="uid://x1r387njcprd" path="res://cake_holder_texture.tscn" id="13_y452i"]
 [ext_resource type="PackedScene" uid="uid://bc2v8uexnvfe1" path="res://green_potion_8_colision.tscn" id="15_ovqfc"]
@@ -211,13 +211,13 @@ transform = Transform3D(-0.176898, 0, 0.229797, 0, 0.29, 0, -0.229797, 0, -0.176
 [node name="cubcake" parent="." instance=ExtResource("9_aacrr")]
 transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -3.78976, 2.69284, 0.118811)
 
-[node name="magican_cylinder" parent="." instance=ExtResource("10_37yke")]
+[node name="magican_cylinder2" parent="." instance=ExtResource("9_w2svb")]
 transform = Transform3D(1.45051, 0, -1.21166, 0, 1.89, 0, 1.21166, 0, 1.45051, -3.11836, 2.61784, -1.07411)
 
 [node name="Heart+Shaped+Balloon" parent="." instance=ExtResource("11_g1u74")]
 transform = Transform3D(0.0223175, 0.00478999, -0.0194676, 0.00652408, 0.0258104, 0.0138298, 0.018957, -0.0145218, 0.018159, -2.96718, 3.08571, 0.704443)
 
-[node name="Butterfly" parent="." instance=ExtResource("12_u0r8x")]
+[node name="Butterfly2" parent="." instance=ExtResource("11_xfrmf")]
 transform = Transform3D(-0.161655, 0.11323, -0.0971939, -0.0416672, 0.103343, 0.189695, 0.143288, 0.157795, -0.0544905, -1.03981, 2.9902, -0.682536)
 
 [node name="Rose" parent="." instance=ExtResource("13_tlgek")]
