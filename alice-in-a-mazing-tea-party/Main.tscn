@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=32 format=3 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
@@ -24,7 +24,6 @@
 [ext_resource type="PackedScene" uid="uid://d2u1r0rg5hqiu" path="res://fruit.tscn" id="22_nnpf2"]
 [ext_resource type="PackedScene" uid="uid://bk8gbsojho5xs" path="res://wine_collision.tscn" id="22_u3ss0"]
 [ext_resource type="PackedScene" uid="uid://8qkkrkbg0vvj" path="res://Materials/desserts/Table Setting Decoration.fbx" id="23_4tkao"]
-[ext_resource type="PackedScene" uid="uid://das233fe4hifk" path="res://Materials/desserts/flowers.fbx" id="24_ud7vk"]
 [ext_resource type="Script" path="res://character_body_3d.gd" id="25_d34u1"]
 [ext_resource type="PackedScene" uid="uid://wnc43loqyw5g" path="res://table_setting_decoration__collision.tscn" id="26_a4pmy"]
 
@@ -133,13 +132,13 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.34882, 2.61221, 0.447555)
 
 [node name="flowers" parent="." instance=ExtResource("21_xwfq4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3831, 2.617, 0)
+transform = Transform3D(0.956305, 0, -0.292372, 0, 1, 0, 0.292372, 0, 0.956305, 3.3831, 2.617, 0)
 
-[node name="flowers2" parent="." instance=ExtResource("24_ud7vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.363, 2.617, 0)
+[node name="flowers4" parent="." instance=ExtResource("21_xwfq4")]
+transform = Transform3D(0.970296, 0, 0.241922, 0, 1, 0, -0.241922, 0, 0.970296, 2.4205, 2.61408, 0.006)
 
-[node name="flowers3" parent="." instance=ExtResource("24_ud7vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.374, 2.617, 0)
+[node name="flowers2" parent="." instance=ExtResource("21_xwfq4")]
+transform = Transform3D(0.97437, 0, 0.224951, 0, 1, 0, -0.224951, 0, 0.97437, 1.294, 2.618, 0)
 
 [node name="Table Setting Decoration5" parent="." instance=ExtResource("26_a4pmy")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.79189, 2.61221, -0.510832)
