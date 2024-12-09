@@ -288,7 +288,7 @@ skeleton = NodePath("../..")
 visible = false
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61317, -0.270258, -0.342079)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281104, 0.297419, 0.223111)
 use_collision = true
 size = Vector3(18.015, 0.459484, 11.5838)
 material = SubResource("StandardMaterial3D_kuo2o")
