@@ -120,6 +120,7 @@ extends CharacterBody3D
 @onready var neck = $Neck
 
 @export var movement_sens = 0.05
+var Potion = 0
 
 const SPEED = 0.5
 const JUMP_VELOCITY = 2.5
@@ -171,3 +172,7 @@ func _physics_process(delta):
 
 	# Clamp the camera's vertical rotation
 	camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-30), deg_to_rad(60))
+
+func pick():
+	Potion += 1
+	print (Potion)
