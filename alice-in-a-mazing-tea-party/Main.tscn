@@ -1,8 +1,9 @@
-[gd_scene load_steps=46 format=4 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=47 format=4 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="Material" uid="uid://dsb876ai03pem" path="res://Table Cloth.tres" id="1_3xvfm"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
 [ext_resource type="PackedScene" uid="uid://bx340ldu7y74m" path="res://big_cake_collision.tscn" id="2_h4svj"]
+[ext_resource type="PackedScene" uid="uid://c7dn65gpq16kg" path="res://berry_cake_texture_collision.tscn" id="3_c512c"]
 [ext_resource type="PackedScene" uid="uid://dyne0rhdsfjas" path="res://cup_and_saucer_set_fbx_(unity)_collision.tscn" id="3_xx5x1"]
 [ext_resource type="PackedScene" uid="uid://wjlwvfjw4885" path="res://heart_teapot_collision.tscn" id="5_m5o5m"]
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
@@ -185,6 +186,9 @@ shape = SubResource("ConcavePolygonShape3D_6cu5l")
 [node name="BigCake2" parent="." instance=ExtResource("2_h4svj")]
 transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 2.67329, 2.67951, 1.99692)
 
+[node name="BerryCake2" parent="." instance=ExtResource("3_c512c")]
+transform = Transform3D(0.46, 0, 0, 0, 0.46, 0, 0, 0, 0.46, -1.10961, 2.58853, 0.221859)
+
 [node name="Hole Cake2" parent="." instance=ExtResource("2_8l2gb")]
 visible = false
 
@@ -201,7 +205,7 @@ transform = Transform3D(0.102974, 0, 2.26766, 0, 2.27, 0, -2.26766, 0, 0.102974,
 transform = Transform3D(-0.588523, 0, -2.24411, 0, 2.32, 0, 2.24411, 0, -0.588523, -3.10656, 2.61628, 0.511983)
 
 [node name="teaset(sugerpot)2" parent="." instance=ExtResource("6_pnpcp")]
-transform = Transform3D(0.692194, 0, -0.721712, 0, 1, 0, 0.721712, 0, 0.692194, -1.64633, 2.62673, 0.705042)
+transform = Transform3D(0.692194, 0, -0.721712, 0, 1, 0, 0.721712, 0, 0.692194, -1.83576, 2.62673, 0.705042)
 
 [node name="Chocolate Cake with Plate and Fork FBX (Unity)" parent="." instance=ExtResource("6_debim")]
 transform = Transform3D(-3.08034, 0, 1.66178, 0, 3.5, 0, -1.66178, 0, -3.08034, -3.33996, 2.60948, -0.556872)
@@ -241,7 +245,7 @@ transform = Transform3D(-17.5125, 0, -1.53099e-06, 0, 17.5125, 0, 1.53099e-06, 0
 transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, 1.86785, 2.60301, -0.0122271)
 
 [node name="bird2" parent="." instance=ExtResource("19_tvayx")]
-transform = Transform3D(-2.08, 0, -1.81839e-07, 0, 2.08, 0, 1.81839e-07, 0, -2.08, 1.93022, 2.609, -0.353572)
+transform = Transform3D(-1.79654e-07, 0, -4.11, 0, 4.11, 0, 4.11, 0, -1.79654e-07, -0.106113, 2.609, -0.926642)
 
 [node name="GravyBoat" parent="." instance=ExtResource("20_lg48t")]
 transform = Transform3D(-1.25889e-07, 0, 2.88, 0, 2.88, 0, -2.88, 0, -1.25889e-07, 0.595497, 2.61134, 0.889565)
@@ -304,3 +308,6 @@ transform = Transform3D(2.11, 0, 0, 0, 2.11, 0, 0, 0, 2.11, -2.25011, 2.602, 0.0
 
 [node name="Potion" parent="." instance=ExtResource("30_1sl1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.549671, 2.61291, 0.993679)
+
+[node name="Chocolate Cake with Plate and Fork FBX (Unity)3" parent="." instance=ExtResource("6_debim")]
+transform = Transform3D(-0.53171, 0, 3.45938, 0, 3.5, 0, -3.45938, 0, -0.53171, 1.76031, 2.61482, -0.561781)
