@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://brxrlhw7ekvqw"]
+
+[ext_resource type="AudioStream" uid="uid://ba72yc6gtjxn8" path="res://BGM/deep-night-alicex27s-dream-184229.mp3" id="1_fpu6o"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_fpu6o")
+autoplay = true

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvo75rrmdvydt"]
+
+[ext_resource type="AudioStream" uid="uid://buw1gyh0e8h5l" path="res://BGM/ガラスビン・蓋付き・ちゃぷちゃぷ02.mp3" id="1_n58ck"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_n58ck")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://bitd5xv7wdqvw"]
+[gd_scene load_steps=8 format=4 uid="uid://bitd5xv7wdqvw"]
 
 [ext_resource type="Script" path="res://Scripts/portion.gd" id="1_8b378"]
+[ext_resource type="PackedScene" uid="uid://bvo75rrmdvydt" path="res://potion_sound.tscn" id="2_f1nbl"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j058k"]
 resource_name = "RHIGH.022"
@@ -80,6 +81,9 @@ radius = 0.208556
 [node name="Potion" type="Node3D"]
 transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, 0, 0, 0)
 script = ExtResource("1_8b378")
+
+[node name="Potion_Sound" parent="." instance=ExtResource("2_f1nbl")]
+volume_db = 14.523
 
 [node name="Green_Potion_3" type="Node3D" parent="."]
 
