@@ -119,6 +119,8 @@ extends CharacterBody3D
 @onready var camera_3d = $Neck/Camera3D
 @onready var neck = $Neck
 
+@onready var game_clear_view = $GameClearView  # Game Clear View ノードへの参照
+
 @export var movement_sens = 0.05
 var Potion = 0
 
@@ -152,10 +154,16 @@ func _physics_process(delta):
 		# Apply movement direction to velocity
 		velocity.x = move_direction.x * SPEED
 		velocity.z = move_direction.z * SPEED
+	
 	else:
-		# Decelerate smoothly when there's no input
-		velocity.x = move_toward(velocity.x, 0, SPEED * delta)
-		velocity.z = move_toward(velocity.z, 0, SPEED * delta)
+		# Stop movement immediately when there's no input
+		velocity.x = 0
+		velocity.z = 0
+
+	#else:
+		## Decelerate smoothly when there's no input
+		#velocity.x = move_toward(velocity.x, 0, SPEED * delta)
+		#velocity.z = move_toward(velocity.z, 0, SPEED * delta)
 
 	# Apply movement
 	move_and_slide()
@@ -173,6 +181,26 @@ func _physics_process(delta):
 	# Clamp the camera's vertical rotation
 	camera_3d.rotation.x = clamp(camera_3d.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 
+	# Check for game clear condition
+	check_game_clear()
+	
 func pick():
 	Potion += 1
 	print (Potion)
+
+func check_game_clear():
+	if Potion >= 7:
+		print("Game Clear!")
+		# Switch to the Game Clear View
+		switch_to_game_clear_view()
+func switch_to_game_clear_view():
+	# Deactivate current player character
+	self.visible = false
+	self.set_physics_process(false)
+	
+	# Activate Game Clear View
+	game_clear_view.visible = true
+	game_clear_view.set_physics_process(true)
+	
+	# Optionally, position the Game Clear View
+	game_clear_view.global_transform = self.global_transform

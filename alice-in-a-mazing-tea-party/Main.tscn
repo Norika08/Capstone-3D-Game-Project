@@ -1,22 +1,22 @@
-[gd_scene load_steps=47 format=4 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=50 format=4 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="Material" uid="uid://dsb876ai03pem" path="res://Table Cloth.tres" id="1_3xvfm"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
 [ext_resource type="PackedScene" uid="uid://bx340ldu7y74m" path="res://big_cake_collision.tscn" id="2_h4svj"]
 [ext_resource type="PackedScene" uid="uid://c7dn65gpq16kg" path="res://berry_cake_texture_collision.tscn" id="3_c512c"]
-[ext_resource type="PackedScene" uid="uid://dyne0rhdsfjas" path="res://cup_and_saucer_set_fbx_(unity)_collision.tscn" id="3_xx5x1"]
+[ext_resource type="PackedScene" path="res://cup_and_saucer_set_fbx_(unity)_collision.tscn" id="3_xx5x1"]
 [ext_resource type="PackedScene" uid="uid://wjlwvfjw4885" path="res://heart_teapot_collision.tscn" id="5_m5o5m"]
 [ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
-[ext_resource type="PackedScene" uid="uid://b420c1k4hlcd1" path="res://teaset(sugerpot)_texture.tscn" id="6_pnpcp"]
+[ext_resource type="PackedScene" path="res://teaset(sugerpot)_texture.tscn" id="6_pnpcp"]
 [ext_resource type="PackedScene" uid="uid://be0qwr12tixg8" path="res://donut_texture.tscn" id="7_dq1q2"]
-[ext_resource type="PackedScene" uid="uid://dvn7hhn1fjeof" path="res://cubcake_texture.tscn" id="8_708l5"]
-[ext_resource type="PackedScene" uid="uid://b5xrk0jmejjrw" path="res://magican_cylinder_texture.tscn" id="9_w2svb"]
+[ext_resource type="PackedScene" path="res://cubcake_texture.tscn" id="8_708l5"]
+[ext_resource type="PackedScene" path="res://magican_cylinder_texture.tscn" id="9_w2svb"]
 [ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
-[ext_resource type="PackedScene" uid="uid://cetyo061gdt36" path="res://butterfly_texture.tscn" id="11_xfrmf"]
+[ext_resource type="PackedScene" path="res://butterfly_texture.tscn" id="11_xfrmf"]
 [ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
-[ext_resource type="PackedScene" uid="uid://x1r387njcprd" path="res://cake_holder_texture.tscn" id="13_y452i"]
+[ext_resource type="PackedScene" path="res://cake_holder_texture.tscn" id="13_y452i"]
 [ext_resource type="PackedScene" uid="uid://bc2v8uexnvfe1" path="res://green_potion_8_colision.tscn" id="15_ovqfc"]
-[ext_resource type="PackedScene" uid="uid://cglnmwqemygft" path="res://candle_texture.tscn" id="16_s242u"]
+[ext_resource type="PackedScene" path="res://candle_texture.tscn" id="16_s242u"]
 [ext_resource type="PackedScene" uid="uid://byobjh1e28w2s" path="res://glass_bowl_collision.tscn" id="17_agc6n"]
 [ext_resource type="PackedScene" uid="uid://dgki3qpk2hcas" path="res://bird_collision.tscn" id="19_tvayx"]
 [ext_resource type="PackedScene" uid="uid://5r8twxjrdcgd" path="res://gravy_boat_collision.tscn" id="20_lg48t"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://dyk8oupqqrnl4" path="res://Texture/Grass001_2K-PNG/Grass001_2K-PNG_Roughness.png" id="30_1e3sf"]
 [ext_resource type="PackedScene" uid="uid://bitd5xv7wdqvw" path="res://potion.tscn" id="30_1sl1v"]
 [ext_resource type="PackedScene" uid="uid://dov2enyg6jkg4" path="res://Materials/Easter_bunny_fbx/Easter_bunny.FBX" id="30_rklk8"]
+[ext_resource type="Script" path="res://game_clear_view.gd" id="33_15lpm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
 sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
@@ -135,6 +136,8 @@ shadow_mesh = SubResource("ArrayMesh_6f6tm")
 data = PackedVector3Array(-0.63, 0.680754, -0.415491, -0.63, 0.680754, 0.415491, -0.625491, 0.676245, 0.415491, -0.625491, 0.676245, 0.415491, -0.625491, 0.676245, -0.415491, -0.63, 0.680754, -0.415491, 0.625491, 0.676245, 0.415491, -0.625491, 0.676245, 0.415491, -0.625491, 0.680754, 0.42, -0.625491, 0.680754, 0.42, 0.625491, 0.680754, 0.42, 0.625491, 0.676245, 0.415491, -0.625491, 0.716828, 0.42, -0.625491, 0.680754, 0.42, -0.63, 0.680754, 0.415491, -0.63, 0.680754, 0.415491, -0.63, 0.716828, 0.415491, -0.625491, 0.716828, 0.42, 0.625491, 0.676245, -0.415491, 0.625491, 0.676245, 0.415491, 0.63, 0.680754, 0.415491, 0.63, 0.680754, 0.415491, 0.63, 0.680754, -0.415491, 0.625491, 0.676245, -0.415491, 0.63, 0.716828, 0.415491, 0.63, 0.680754, 0.415491, 0.625491, 0.680754, 0.42, 0.625491, 0.680754, 0.42, 0.625491, 0.716828, 0.42, 0.63, 0.716828, 0.415491, -0.625491, 0.721337, -0.415491, -0.625491, 0.721337, 0.415491, -0.63, 0.716828, 0.415491, -0.63, 0.716828, 0.415491, -0.63, 0.716828, -0.415491, -0.625491, 0.721337, -0.415491, 0.625491, 0.716828, 0.42, -0.625491, 0.716828, 0.42, -0.625491, 0.721337, 0.415491, -0.625491, 0.721337, 0.415491, 0.625491, 0.721337, 0.415491, 0.625491, 0.716828, 0.42, 0.63, 0.716828, -0.415491, 0.63, 0.716828, 0.415491, 0.625491, 0.721337, 0.415491, 0.625491, 0.721337, 0.415491, 0.625491, 0.721337, -0.415491, 0.63, 0.716828, -0.415491, -0.625491, 0.680754, -0.42, -0.625491, 0.716828, -0.42, -0.63, 0.716828, -0.415491, -0.63, 0.716828, -0.415491, -0.63, 0.680754, -0.415491, -0.625491, 0.680754, -0.42, 0.625491, 0.721337, -0.415491, -0.625491, 0.721337, -0.415491, -0.625491, 0.716828, -0.42, -0.625491, 0.716828, -0.42, 0.625491, 0.716828, -0.42, 0.625491, 0.721337, -0.415491, 0.63, 0.680754, -0.415491, 0.63, 0.716828, -0.415491, 0.625491, 0.716828, -0.42, 0.625491, 0.716828, -0.42, 0.625491, 0.680754, -0.42, 0.63, 0.680754, -0.415491, 0.625491, 0.680754, -0.42, -0.625491, 0.680754, -0.42, -0.625491, 0.676245, -0.415491, -0.625491, 0.676245, -0.415491, 0.625491, 0.676245, -0.415491, 0.625491, 0.680754, -0.42, 0.625491, 0.716828, 0.42, 0.625491, 0.680754, 0.42, -0.625491, 0.680754, 0.42, -0.625491, 0.680754, 0.42, -0.625491, 0.716828, 0.42, 0.625491, 0.716828, 0.42, 0.625491, 0.721337, -0.415491, 0.625491, 0.721337, 0.415491, -0.625491, 0.721337, 0.415491, -0.625491, 0.721337, 0.415491, -0.625491, 0.721337, -0.415491, 0.625491, 0.721337, -0.415491, 0.625491, 0.680754, -0.42, 0.625491, 0.716828, -0.42, -0.625491, 0.716828, -0.42, -0.625491, 0.716828, -0.42, -0.625491, 0.680754, -0.42, 0.625491, 0.680754, -0.42, 0.625491, 0.676245, 0.415491, 0.625491, 0.676245, -0.415491, -0.625491, 0.676245, -0.415491, -0.625491, 0.676245, -0.415491, -0.625491, 0.676245, 0.415491, 0.625491, 0.676245, 0.415491, 0.63, 0.716828, -0.415491, 0.63, 0.680754, -0.415491, 0.63, 0.680754, 0.415491, 0.63, 0.680754, 0.415491, 0.63, 0.716828, 0.415491, 0.63, 0.716828, -0.415491, -0.63, 0.716828, 0.415491, -0.63, 0.680754, 0.415491, -0.63, 0.680754, -0.415491, -0.63, 0.680754, -0.415491, -0.63, 0.716828, -0.415491, -0.63, 0.716828, 0.415491, -0.63, 0.680754, 0.415491, -0.625491, 0.680754, 0.42, -0.625491, 0.676245, 0.415491, 0.625491, 0.676245, 0.415491, 0.625491, 0.680754, 0.42, 0.63, 0.680754, 0.415491, -0.625491, 0.721337, 0.415491, -0.625491, 0.716828, 0.42, -0.63, 0.716828, 0.415491, 0.63, 0.716828, 0.415491, 0.625491, 0.716828, 0.42, 0.625491, 0.721337, 0.415491, -0.625491, 0.716828, -0.42, -0.625491, 0.721337, -0.415491, -0.63, 0.716828, -0.415491, 0.63, 0.716828, -0.415491, 0.625491, 0.721337, -0.415491, 0.625491, 0.716828, -0.42, -0.625491, 0.676245, -0.415491, -0.625491, 0.680754, -0.42, -0.63, 0.680754, -0.415491, 0.63, 0.680754, -0.415491, 0.625491, 0.680754, -0.42, 0.625491, 0.676245, -0.415491, -0.538405, 0.691781, 0.389291, -0.547887, -0.0189964, 0.381075, -0.585875, -0.0189964, 0.381075, -0.585875, -0.0189964, 0.381075, -0.595358, 0.691781, 0.389291, -0.538405, 0.691781, 0.389291, -0.585875, -0.0189964, 0.336252, -0.547887, -0.0189964, 0.336252, -0.538405, 0.691781, 0.328036, -0.538405, 0.691781, 0.328036, -0.595358, 0.691781, 0.328036, -0.585875, -0.0189964, 0.336252, -0.547887, -0.0189964, 0.381075, -0.547887, -0.0189964, 0.336252, -0.585875, -0.0189964, 0.336252, -0.585875, -0.0189964, 0.336252, -0.585875, -0.0189964, 0.381075, -0.547887, -0.0189964, 0.381075, -0.538405, 0.691781, 0.328036, -0.547887, -0.0189964, 0.336252, -0.547887, -0.0189964, 0.381075, -0.547887, -0.0189964, 0.381075, -0.538405, 0.691781, 0.389291, -0.538405, 0.691781, 0.328036, -0.595358, 0.691781, 0.328036, -0.595358, 0.691781, 0.389291, -0.585875, -0.0189964, 0.381075, -0.585875, -0.0189964, 0.381075, -0.585875, -0.0189964, 0.336252, -0.595358, 0.691781, 0.328036, -0.538405, 0.691781, -0.389291, -0.595358, 0.691781, -0.389291, -0.585875, -0.0189964, -0.381075, -0.585875, -0.0189964, -0.381075, -0.547887, -0.0189964, -0.381075, -0.538405, 0.691781, -0.389291, -0.538405, 0.691781, -0.328036, -0.547887, -0.0189964, -0.336252, -0.585875, -0.0189964, -0.336252, -0.585875, -0.0189964, -0.336252, -0.595358, 0.691781, -0.328036, -0.538405, 0.691781, -0.328036, -0.547887, -0.0189964, -0.381075, -0.585875, -0.0189964, -0.381075, -0.585875, -0.0189964, -0.336252, -0.585875, -0.0189964, -0.336252, -0.547887, -0.0189964, -0.336252, -0.547887, -0.0189964, -0.381075, -0.538405, 0.691781, -0.328036, -0.538405, 0.691781, -0.389291, -0.547887, -0.0189964, -0.381075, -0.547887, -0.0189964, -0.381075, -0.547887, -0.0189964, -0.336252, -0.538405, 0.691781, -0.328036, -0.585875, -0.0189964, -0.381075, -0.595358, 0.691781, -0.389291, -0.595358, 0.691781, -0.328036, -0.595358, 0.691781, -0.328036, -0.585875, -0.0189964, -0.336252, -0.585875, -0.0189964, -0.381075, 0.538405, 0.691781, 0.389291, 0.595358, 0.691781, 0.389291, 0.585875, -0.0189964, 0.381075, 0.585875, -0.0189964, 0.381075, 0.547887, -0.0189964, 0.381075, 0.538405, 0.691781, 0.389291, 0.538405, 0.691781, 0.328036, 0.547887, -0.0189964, 0.336252, 0.585875, -0.0189964, 0.336252, 0.585875, -0.0189964, 0.336252, 0.595358, 0.691781, 0.328036, 0.538405, 0.691781, 0.328036, 0.547887, -0.0189964, 0.381075, 0.585875, -0.0189964, 0.381075, 0.585875, -0.0189964, 0.336252, 0.585875, -0.0189964, 0.336252, 0.547887, -0.0189964, 0.336252, 0.547887, -0.0189964, 0.381075, 0.538405, 0.691781, 0.328036, 0.538405, 0.691781, 0.389291, 0.547887, -0.0189964, 0.381075, 0.547887, -0.0189964, 0.381075, 0.547887, -0.0189964, 0.336252, 0.538405, 0.691781, 0.328036, 0.585875, -0.0189964, 0.381075, 0.595358, 0.691781, 0.389291, 0.595358, 0.691781, 0.328036, 0.595358, 0.691781, 0.328036, 0.585875, -0.0189964, 0.336252, 0.585875, -0.0189964, 0.381075, 0.538405, 0.691781, -0.389291, 0.547887, -0.0189964, -0.381075, 0.585875, -0.0189964, -0.381075, 0.585875, -0.0189964, -0.381075, 0.595358, 0.691781, -0.389291, 0.538405, 0.691781, -0.389291, 0.585875, -0.0189964, -0.336252, 0.547887, -0.0189964, -0.336252, 0.538405, 0.691781, -0.328036, 0.538405, 0.691781, -0.328036, 0.595358, 0.691781, -0.328036, 0.585875, -0.0189964, -0.336252, 0.547887, -0.0189964, -0.381075, 0.547887, -0.0189964, -0.336252, 0.585875, -0.0189964, -0.336252, 0.585875, -0.0189964, -0.336252, 0.585875, -0.0189964, -0.381075, 0.547887, -0.0189964, -0.381075, 0.538405, 0.691781, -0.328036, 0.547887, -0.0189964, -0.336252, 0.547887, -0.0189964, -0.381075, 0.547887, -0.0189964, -0.381075, 0.538405, 0.691781, -0.389291, 0.538405, 0.691781, -0.328036, 0.595358, 0.691781, -0.328036, 0.595358, 0.691781, -0.389291, 0.585875, -0.0189964, -0.381075, 0.585875, -0.0189964, -0.381075, 0.585875, -0.0189964, -0.336252, 0.595358, 0.691781, -0.328036)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_y4n8l"]
+radius = 1.31202
+height = 3.02367
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_02un2"]
 
@@ -149,6 +152,10 @@ heightmap_enabled = true
 heightmap_texture = ExtResource("28_ft21c")
 uv1_scale = Vector3(1.16, 1.16, 1.16)
 uv1_world_triplanar = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4rg4c"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ak5ym"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -282,7 +289,7 @@ transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-0
 script = ExtResource("24_mww8q")
 
 [node name="Neck" type="Node3D" parent="CharacterBody3D"]
-transform = Transform3D(33.3333, 0, -6.82121e-13, 0, 33.3333, 0, 6.82121e-13, 0, 33.3333, -0.0415512, 1.08614, -1.57788)
+transform = Transform3D(33.3333, 0, -1.02318e-12, 0, 33.3333, 0, 1.02318e-12, 0, 33.3333, 0.0184057, 1.40334, 0.00286865)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Neck"]
 transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 1.16415e-10, 0, 0)
@@ -307,7 +314,43 @@ material = SubResource("StandardMaterial3D_kuo2o")
 transform = Transform3D(2.11, 0, 0, 0, 2.11, 0, 0, 0, 2.11, -2.25011, 2.602, 0.0511337)
 
 [node name="Potion" parent="." instance=ExtResource("30_1sl1v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.549671, 2.61291, 0.993679)
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -0.549671, 2.73105, 0.993679)
 
 [node name="Chocolate Cake with Plate and Fork FBX (Unity)3" parent="." instance=ExtResource("6_debim")]
 transform = Transform3D(-0.53171, 0, 3.45938, 0, 3.5, 0, -3.45938, 0, -0.53171, 1.76031, 2.61482, -0.561781)
+
+[node name="Potion2" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01145, 2.61259, 0.950675)
+
+[node name="Potion3" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19893, 2.60599, -0.242991)
+
+[node name="Potion4" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.66244, 2.61015, -1.17274)
+
+[node name="Potion5" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.07324, 2.60343, 0.410777)
+
+[node name="Potion6" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13497, 2.60956, -0.99927)
+
+[node name="Potion7" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13642, 2.61284, -0.100704)
+
+[node name="GameClearView" type="Node3D" parent="."]
+
+[node name="Game_Clear_View" type="CharacterBody3D" parent="GameClearView"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.79627, 3.67801, 2.2256)
+script = ExtResource("33_15lpm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GameClearView/Game_Clear_View"]
+transform = Transform3D(0.13, 0, 0, 0, 0.13, 0, 0, 0, 0.13, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_4rg4c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameClearView/Game_Clear_View"]
+transform = Transform3D(0.13, 0, 0, 0, 0.13, 0, 0, 0, 0.13, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_ak5ym")
+
+[node name="Neck2" type="Node3D" parent="GameClearView/Game_Clear_View"]
+
+[node name="Camera3D" type="Camera3D" parent="GameClearView/Game_Clear_View/Neck2"]
