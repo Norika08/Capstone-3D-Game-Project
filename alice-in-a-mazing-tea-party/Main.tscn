@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=54 format=4 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="Material" uid="uid://dsb876ai03pem" path="res://Texture/Table Cloth.tres" id="1_3xvfm"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
@@ -165,7 +165,12 @@ size = Vector3(17.6798, 1.46777, 11.1368)
 line_spacing = 30.0
 font = ExtResource("34_u8g3x")
 font_size = 55
-font_color = Color(0.67451, 0.980392, 1, 1)
+font_color = Color(0.419608, 1, 0.886275, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qpr25"]
+font = ExtResource("34_u8g3x")
+font_size = 60
+font_color = Color(1, 0, 1, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -330,11 +335,11 @@ shape = SubResource("BoxShape3D_4ees1")
 [node name="Easter_bunny" parent="." instance=ExtResource("30_rklk8")]
 transform = Transform3D(2.11, 0, 0, 0, 2.11, 0, 0, 0, 2.11, -2.25011, 2.602, 0.0511337)
 
-[node name="Potion" parent="." instance=ExtResource("30_1sl1v")]
-transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -4.18085, 2.73105, 0.993679)
-
 [node name="Chocolate Cake with Plate and Fork FBX (Unity)3" parent="." instance=ExtResource("6_debim")]
 transform = Transform3D(-0.53171, 0, 3.45938, 0, 3.5, 0, -3.45938, 0, -0.53171, 1.76031, 2.61482, -0.561781)
+
+[node name="Potion" parent="." instance=ExtResource("30_1sl1v")]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -4.18085, 2.73105, 0.993679)
 
 [node name="Potion2" parent="." instance=ExtResource("30_1sl1v")]
 transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -3.94798, 2.70051, 1.16077)
@@ -382,7 +387,7 @@ transform = Transform3D(0.768406, -0.260765, 0.584425, 1.32236e-09, 0.913219, 0.
 [node name="CanvasLayer" type="CanvasLayer" parent="GameClearScreen"]
 
 [node name="Label" type="Label" parent="GameClearScreen/CanvasLayer"]
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = 255.0
@@ -392,5 +397,19 @@ text = "How wonderful it is to be whole again!
 Now, let us begin our curious tea party!"
 label_settings = SubResource("LabelSettings_grx5k")
 horizontal_alignment = 1
+
+[node name="Potion count" type="CanvasLayer" parent="."]
+
+[node name="PotionLabel" type="Label" parent="Potion count"]
+anchors_preset = -1
+anchor_left = 0.043
+anchor_top = 0.042
+anchor_right = 0.281
+anchor_bottom = 0.193
+offset_left = -0.536003
+offset_top = 15.784
+offset_right = -0.712036
+offset_bottom = 16.936
+label_settings = SubResource("LabelSettings_qpr25")
 
 [connection signal="body_entered" from="Ground/Grass/Area3D" to="Ground" method="_on_area_3d_body_entered"]

@@ -64,6 +64,8 @@ extends CharacterBody3D
 #@onready var game_clear_label = $"../GameClearScreen/CanvasLayer/Label"  # Labelノードを参照
 @onready var game_clear_label = $"../GameClearScreen/CanvasLayer/Label"
 
+@onready var potion_label = $"../Potion count/PotionLabel"  # Potion ラベルを参照
+
 @onready var game_clear_camera = $"/root/Node3D/Game_Clear_Camera"  # Game_Clear_Camera ノードを参照
 
 @export var movement_sens = 0.05
@@ -101,6 +103,11 @@ func _ready():
 		print("Game Clear label initialized and set to invisible.")
 	else:
 		print("Error: Game Clear Label not found")
+# Potion ラベルの初期化
+	if potion_label:
+		update_potion_label()  # Potion ラベルを初期化
+	else:
+		print("Error: Potion Label not found")
 
 func _physics_process(delta):
 	# Add gravity
@@ -157,6 +164,7 @@ func _physics_process(delta):
 func pick():
 	Potion += 1
 	print (Potion)
+	update_potion_label()  # ポーションラベルを更新
 
 
 
@@ -205,6 +213,13 @@ func reset_position() -> void:
 	global_transform.origin = start_position  # 初期位置に戻す
 	velocity = Vector3.ZERO  # 動きをリセット
 
+# ポーションカウントラベルを更新
+func update_potion_label():
+	if potion_label:
+		# Potion のカウントを"/7" という形で表示
+		potion_label.text = "Drink Me: " + str(Potion) + "/7"
+	else:
+		print("Error: Potion Label not found")
 
 #func show_game_clear_text():
 	## "Game Clear!!" を表示
