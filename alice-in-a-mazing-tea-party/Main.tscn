@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://unqb7rmyh7ks"]
+[gd_scene load_steps=51 format=4 uid="uid://unqb7rmyh7ks"]
 
 [ext_resource type="Material" uid="uid://dsb876ai03pem" path="res://Texture/Table Cloth.tres" id="1_3xvfm"]
 [ext_resource type="PackedScene" uid="uid://cfjucxhb2cad" path="res://hole_cake_colision.tscn" id="2_8l2gb"]
@@ -25,13 +25,13 @@
 [ext_resource type="PackedScene" uid="uid://bk8gbsojho5xs" path="res://wine_collision.tscn" id="22_u3ss0"]
 [ext_resource type="PackedScene" uid="uid://bd7km1iuycgwd" path="res://table_setting_decoration_collision_texture.tscn" id="23_7f01b"]
 [ext_resource type="Script" path="res://Scripts/test2.gd" id="24_mww8q"]
+[ext_resource type="Script" path="res://New_ground.tres.gd" id="26_3bkxc"]
 [ext_resource type="Texture2D" uid="uid://5acheshscrcb" path="res://Texture/Grass001_2K-PNG/Grass001_2K-PNG_Color.png" id="27_jhdha"]
 [ext_resource type="Texture2D" uid="uid://drpnrmjakv4bn" path="res://Texture/Grass001_2K-PNG/Grass001_2K-PNG_Displacement.png" id="28_ft21c"]
 [ext_resource type="Texture2D" uid="uid://b5btpv1hyilvl" path="res://Texture/Grass001_2K-PNG/Grass001_2K-PNG_NormalGL.png" id="29_bcwcv"]
 [ext_resource type="Texture2D" uid="uid://dyk8oupqqrnl4" path="res://Texture/Grass001_2K-PNG/Grass001_2K-PNG_Roughness.png" id="30_1e3sf"]
 [ext_resource type="PackedScene" uid="uid://bitd5xv7wdqvw" path="res://potion.tscn" id="30_1sl1v"]
 [ext_resource type="PackedScene" uid="uid://dov2enyg6jkg4" path="res://Materials/Easter_bunny_fbx/Easter_bunny.FBX" id="30_rklk8"]
-[ext_resource type="Script" path="res://grass.gd" id="31_j1grj"]
 [ext_resource type="Script" path="res://Scripts/game_clear_view_chara3d.gd" id="33_sgov5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
@@ -154,47 +154,7 @@ uv1_scale = Vector3(1.16, 1.16, 1.16)
 uv1_world_triplanar = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ees1"]
-size = Vector3(17.5481, 1.46777, 11.1368)
-
-[sub_resource type="GDScript" id="GDScript_r6g1y"]
-script/source = "extends Node3D
-
-
-# Called when the node enters the scene tree for the first time.
-#func _ready() -> void:
-	#pass # Replace with function body.
-#
-#
-## Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-	#pass
-
-@export var player_start_position: Vector3  # プレイヤーの初期位置を設定
-@onready var player = $\"/root/CharacterBody3D\"  # プレイヤーのノードパスを指定
-
-func _ready() -> void:
-	# プレイヤーの初期位置を現在の位置に設定（デフォルト）
-	if player_start_position == Vector3.ZERO and player:
-		player_start_position = player.global_transform.origin
-
-# プレイヤーがエリアに入った場合の処理
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body == player:
-		print(\"Player entered the Ground area. Restarting position...\")
-		reset_player_position()
-
-func reset_player_position() -> void:
-	if player:
-		# プレイヤーを初期位置に戻す
-		var reset_transform = player.global_transform
-		reset_transform.origin = player_start_position
-		player.global_transform = reset_transform
-
-		# プレイヤーの速度をリセット
-		player.velocity = Vector3.ZERO
-	else:
-		print(\"Error: Player node not found.\")
-"
+size = Vector3(17.6798, 1.46777, 11.1368)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4rg4c"]
 
@@ -344,24 +304,21 @@ skeleton = NodePath("../..")
 [node name="Node3D" type="Node3D" parent="CharacterBody3D"]
 visible = false
 
-[node name="Grass" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281104, 0.297419, 0.223111)
+[node name="Ground" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281104, -0.271776, 0.223111)
+script = ExtResource("26_3bkxc")
+
+[node name="Grass" type="CSGBox3D" parent="Ground"]
 use_collision = true
 size = Vector3(18.015, 0.459484, 11.5838)
 material = SubResource("StandardMaterial3D_kuo2o")
-script = ExtResource("31_j1grj")
 
-[node name="Area3D" type="Area3D" parent="Grass"]
+[node name="Area3D" type="Area3D" parent="Ground/Grass"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.165869, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031372, 0, 0.201599)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Grass/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034484, 0, 0.201599)
 shape = SubResource("BoxShape3D_4ees1")
-
-[node name="Ground" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281104, 0.297419, 0.223111)
-visible = false
-script = SubResource("GDScript_r6g1y")
 
 [node name="Easter_bunny" parent="." instance=ExtResource("30_rklk8")]
 transform = Transform3D(2.11, 0, 0, 0, 2.11, 0, 0, 0, 2.11, -2.25011, 2.602, 0.0511337)
@@ -412,3 +369,5 @@ shape = SubResource("CapsuleShape3D_ak5ym")
 
 [node name="Game_Clear_Camera" type="Camera3D" parent="."]
 transform = Transform3D(0.768406, -0.260765, 0.584425, 1.32236e-09, 0.913219, 0.40747, -0.639962, -0.313103, 0.701723, 3.99126, 4.30294, 1.78629)
+
+[connection signal="body_entered" from="Ground/Grass/Area3D" to="Ground" method="_on_area_3d_body_entered"]
