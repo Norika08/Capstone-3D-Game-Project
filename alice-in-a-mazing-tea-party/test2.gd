@@ -119,7 +119,11 @@ extends CharacterBody3D
 @onready var camera_3d = $Neck/Camera3D
 @onready var neck = $Neck
 
-@onready var game_clear_view = $GameClearView  # Game Clear View ノードへの参照
+#@onready var game_clear_view = $GameClearView  # Game Clear View ノードへの参照
+#@onready var game_clear_view = $"/root/Character3D/GameClearView"
+#@onready var game_clear_view = $"/root/Node3D/Game_Clear_View"
+
+@onready var game_clear_camera = $"/root/Node3D/Game_Clear_Camera"  # Game_Clear_Camera ノードを参照
 
 @export var movement_sens = 0.05
 var Potion = 0
@@ -184,23 +188,67 @@ func _physics_process(delta):
 	# Check for game clear condition
 	check_game_clear()
 	
+
 func pick():
 	Potion += 1
 	print (Potion)
 
+
+#func _ready():
+	#var node = get_node("GameClearView")  # パスが間違っていないか確認
+	#print(node)  # 見つからなければ null が出力される
+# Check for game clear condition
+	check_game_clear()
+	
 func check_game_clear():
 	if Potion >= 7:
 		print("Game Clear!")
 		# Switch to the Game Clear View
-		switch_to_game_clear_view()
-func switch_to_game_clear_view():
-	# Deactivate current player character
-	self.visible = false
-	self.set_physics_process(false)
-	
-	# Activate Game Clear View
-	game_clear_view.visible = true
-	game_clear_view.set_physics_process(true)
-	
-	# Optionally, position the Game Clear View
-	game_clear_view.global_transform = self.global_transform
+		#switch_to_game_clear_view()
+		switch_to_game_clear_camera()
+
+#func switch_to_game_clear_view():
+	## Deactivate current player character
+	#self.visible = false
+	#self.set_physics_process(false)
+	#
+	## Activate Game Clear View
+	#game_clear_view.visible = true
+	#game_clear_view.set_physics_process(true)
+	#
+	## Optionally, position the Game Clear View
+	#game_clear_view.global_transform = self.global_transform
+#func switch_to_game_clear_view():
+	## Deactivate current player character
+	#visible = false
+	#set_physics_process(false)
+#
+	## Activate Game Clear View
+	#if game_clear_view:
+		#game_clear_view.visible = true
+		#game_clear_view.set_physics_process(true)
+		#game_clear_view.global_transform = self.global_transform
+	#else:
+		#print("Error: Game_Clear_View node not found")
+#func switch_to_game_clear_view():
+	#visible = false
+	#set_physics_process(false)
+#
+	#if game_clear_view:
+		#game_clear_view.visible = true
+		#game_clear_view.set_physics_process(true)
+		#game_clear_view.global_transform = self.global_transform
+		#print("Switched to Game_Clear_View")
+	#else:
+		#print("Error: Game_Clear_View node not found")
+
+func switch_to_game_clear_camera():
+	# プレイヤーのカメラを無効化
+	camera_3d.current = false
+
+	# Game_Clear_Camera を有効化
+	if game_clear_camera:
+		game_clear_camera.current = true
+		print("Switched to Game_Clear_Camera")
+	else:
+		print("Error: Game_Clear_Camera node not found")
