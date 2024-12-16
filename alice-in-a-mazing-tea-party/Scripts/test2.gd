@@ -134,6 +134,13 @@ const JUMP_VELOCITY = 2.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+# プレイヤーの初期位置を記録
+var start_position: Vector3
+
+#func _ready() -> void:
+	
+
+
 func _physics_process(delta):
 	# Add gravity
 	if not is_on_floor():
@@ -252,3 +259,12 @@ func switch_to_game_clear_camera():
 		print("Switched to Game_Clear_Camera")
 	else:
 		print("Error: Game_Clear_Camera node not found")
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.
+
+#func reset_position() -> void:
+	#print("Resetting position to start!")
+	#global_transform.origin = start_position  # 初期位置に戻す
+	#velocity = Vector3.ZERO  # 動きをリセット
