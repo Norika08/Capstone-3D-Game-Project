@@ -1,0 +1,90 @@
+[gd_scene load_steps=18 format=3 uid="uid://unqb7rmyh7ks"]
+
+[ext_resource type="PackedScene" uid="uid://b5a8ly8w85is6" path="res://Materials/Old_table.fbx" id="1_x1465"]
+[ext_resource type="PackedScene" uid="uid://cybg4h5ktqrg2" path="res://Materials/Hole Cake.fbx" id="2_vfivi"]
+[ext_resource type="PackedScene" uid="uid://c2oeqnci5k8kd" path="res://Materials/Cup and Saucer Set - FBX Files/Cup and Saucer Set FBX (Unity).fbx" id="3_uu2ix"]
+[ext_resource type="PackedScene" uid="uid://bptle4nv1v705" path="res://Materials/HeartTeapot.fbx" id="4_83yfq"]
+[ext_resource type="PackedScene" uid="uid://bdgjg32pbt8s7" path="res://Materials/teaset(sugerpot).fbx" id="5_lv0aw"]
+[ext_resource type="PackedScene" uid="uid://boll0fg306yv4" path="res://Materials/Chocolate Cake with Plate and Fork - FBX Files/Chocolate Cake with Plate and Fork FBX (Unity).fbx" id="6_debim"]
+[ext_resource type="PackedScene" uid="uid://siarrdndiiud" path="res://Materials/Donut.fbx" id="7_whuke"]
+[ext_resource type="PackedScene" uid="uid://dov2enyg6jkg4" path="res://Materials/Easter_bunny_fbx/Easter_bunny.FBX" id="8_soqnl"]
+[ext_resource type="PackedScene" uid="uid://ciur3131ttrcj" path="res://Materials/cubcake.fbx" id="9_aacrr"]
+[ext_resource type="PackedScene" uid="uid://b8so75qn21kxy" path="res://Materials/magican_cylinder.fbx" id="10_37yke"]
+[ext_resource type="PackedScene" uid="uid://ixjksu07e1cx" path="res://Materials/Heart+Shaped+Balloon.fbx" id="11_g1u74"]
+[ext_resource type="PackedScene" uid="uid://b2q4bwtndj7l1" path="res://Materials/Butterfly.fbx" id="12_u0r8x"]
+[ext_resource type="PackedScene" uid="uid://5q4uc2hmke2q" path="res://Materials/Rose.fbx" id="13_tlgek"]
+[ext_resource type="PackedScene" uid="uid://dq3b2rxdgxis1" path="res://Materials/cake holder.fbx" id="14_appqj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbgfg"]
+sky_top_color = Color(0.478431, 0.219608, 0.968627, 1)
+sky_horizon_color = Color(0.633434, 0.627355, 0.821709, 1)
+ground_bottom_color = Color(0.055305, 0.289813, 0.318207, 1)
+ground_horizon_color = Color(0.633434, 0.627355, 0.821709, 1)
+
+[sub_resource type="Sky" id="Sky_jvsna"]
+sky_material = SubResource("ProceduralSkyMaterial_cbgfg")
+
+[sub_resource type="Environment" id="Environment_j5nx1"]
+background_mode = 2
+sky = SubResource("Sky_jvsna")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.81953, 2.8455, 0.0939316)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j5nx1")
+
+[node name="table" parent="." instance=ExtResource("1_x1465")]
+transform = Transform3D(7, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
+
+[node name="Hole Cake" parent="." instance=ExtResource("2_vfivi")]
+transform = Transform3D(1.24, 0, 0, 0, 1.24, 0, 0, 0, 1.24, -0.0774288, 2.60148, -0.0339586)
+
+[node name="Cup" parent="." instance=ExtResource("3_uu2ix")]
+transform = Transform3D(-0.417565, 0, -1.95592, 0, 2, 0, 1.95592, 0, -0.417565, -4.30175, 2.61185, -0.284349)
+
+[node name="Cup2" parent="." instance=ExtResource("3_uu2ix")]
+transform = Transform3D(-1.99177, 0, 0.181265, 0, 2, 0, -0.181265, 0, -1.99177, -2.45073, 2.61373, -1.29061)
+
+[node name="Cup3" parent="." instance=ExtResource("3_uu2ix")]
+transform = Transform3D(0.0907259, 0, 1.99794, 0, 2, 0, -1.99794, 0, 0.0907259, -2.96314, 2.60734, 1.0219)
+
+[node name="HeartTeapot" parent="." instance=ExtResource("4_83yfq")]
+transform = Transform3D(-0.588523, 0, -2.24411, 0, 2.32, 0, 2.24411, 0, -0.588523, -3.61104, 2.61628, -0.313122)
+
+[node name="teaset(sugerpot)" parent="." instance=ExtResource("5_lv0aw")]
+transform = Transform3D(0.692194, 0, -0.721712, 0, 1, 0, 0.721712, 0, 0.692194, -2.0007, 2.62673, 0.599156)
+
+[node name="Chocolate Cake with Plate and Fork FBX (Unity)" parent="." instance=ExtResource("6_debim")]
+transform = Transform3D(-3.08034, 0, 1.66178, 0, 3.5, 0, -1.66178, 0, -3.08034, -2.79003, 2.60948, -0.375574)
+
+[node name="Chocolate Cake with Plate and Fork FBX (Unity)2" parent="." instance=ExtResource("6_debim")]
+transform = Transform3D(2.35387, 0, -2.59023, 0, 3.5, 0, 2.59023, 0, 2.35387, -3.99936, 2.62024, 0.839121)
+
+[node name="Donut3" parent="." instance=ExtResource("7_whuke")]
+transform = Transform3D(-0.156929, 0, -0.243871, 0, 0.29, 0, 0.243871, 0, -0.156929, -1.96613, 2.57743, -0.507057)
+
+[node name="Easter_bunny" parent="." instance=ExtResource("8_soqnl")]
+transform = Transform3D(2.08, 0, 0, 0, 2.08, 0, 0, 0, 2.08, -1.70134, 2.60711, 0.0205373)
+
+[node name="cubcake" parent="." instance=ExtResource("9_aacrr")]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, -3.60336, 2.69284, -0.995686)
+
+[node name="magican_cylinder" parent="." instance=ExtResource("10_37yke")]
+transform = Transform3D(1.45051, 0, -1.21166, 0, 1.89, 0, 1.21166, 0, 1.45051, -3.11836, 2.61784, -1.07411)
+
+[node name="Heart+Shaped+Balloon" parent="." instance=ExtResource("11_g1u74")]
+transform = Transform3D(0.0223175, 0.00478999, -0.0194676, 0, 0.0291312, 0.0071677, 0.0200482, -0.00533216, 0.0216711, -4.32419, 2.59317, -0.552108)
+
+[node name="Butterfly" parent="." instance=ExtResource("12_u0r8x")]
+transform = Transform3D(-0.161655, 0.11323, -0.0971939, -0.0416672, 0.103343, 0.189695, 0.143288, 0.157795, -0.0544905, -1.09251, 2.73455, -0.256715)
+
+[node name="Rose" parent="." instance=ExtResource("13_tlgek")]
+transform = Transform3D(0.24732, 0, 0.968934, 0, 1, 0, -0.968934, 0, 0.24732, -3.44472, 2.61968, 0.514024)
+
+[node name="cake holder" parent="." instance=ExtResource("14_appqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67394, 2.56889, 0.173976)
